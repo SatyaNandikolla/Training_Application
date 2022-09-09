@@ -3,7 +3,7 @@ import ChildComponent from './ChildComponent'
 import todoStyles from './todo.module.css'
 import './todo.css'
 
-function Todo_Function(props) {
+function ModulevsCssTodo_Function(props) {
 
     const { id, title, description, priority, completed } = props.todo;
 
@@ -17,4 +17,4 @@ function Todo_Function(props) {
     )
 }
 
-export default Todo_Function
+export default ModulevsCssTodo_Function

@@ -1,4 +1,5 @@
 import './App.css'; 
+import React from "react";
 import HelloWorld from './Module1/1.HelloWorld';
 import Callback from './Module1/10.Callback';
 import Npm from './Module1/11.npm';
@@ -57,8 +58,8 @@ import InlineStyles_Class from './Module3/3.Styles/2. inline styles/InlineStyles
 import InlineStyles_Function from './Module3/3.Styles/2. inline styles/InlineStyles_Function';
 import StyleModule_Class from './Module3/3.Styles/3. style module/StyleModule_Class';
 import StyleModule_Function from './Module3/3.Styles/3. style module/StyleModule_Function';
-import Todo_Class from './Module3/3.Styles/4. style module vs css file/Todo_Class';
-import Todo_Function from './Module3/3.Styles/4. style module vs css file/Todo_Function';
+import ModulevsCssTodo_Class from './Module3/3.Styles/4. style module vs css file/ModulevsCssTodo_Class';
+import ModulevsCssTodo_Function from './Module3/3.Styles/4. style module vs css file/ModulevsCssTodo_Function';
 import PrimitiveList_Class from './Module3/4.List rendering/1. Primitive list/PrimitiveList_Class';
 import PrimitiveList_Function from './Module3/4.List rendering/1. Primitive list/PrimitiveList_Function';
 import ObjectList_Class from './Module3/4.List rendering/2. Object list/ObjectList_Class';
@@ -179,8 +180,59 @@ import Todo3_Function from './Module6/2.Higher-order components/3. Passing initi
 import Todo3_Class from './Module6/2.Higher-order components/3. Passing initial value into HOC/Todo3_Class';
 import Todo4_Function from './Module6/2.Higher-order components/4. Forwarding props in HOC/Todo4_Function';
 import Todo4_Class from './Module6/2.Higher-order components/4. Forwarding props in HOC/Todo4_Class';
+import Todo_Function from './Module7/Unit Testing/1. Shallow rendering/1. Basic usage/components/Todo_Function';
+import Todo_Class from './Module7/Unit Testing/1. Shallow rendering/1. Basic usage/components/Todo_Class';
+//Thunk Middleware
+// import { Provider } from 'react-redux';
+// import store from './Module7/Debugging/React Redux debugging/2. Thunk Middleware/redux-modules/Store';
+// import Todo_Function from './Module7/Debugging/React Redux debugging/2. Thunk Middleware/components/Todo_Function';
+// import Todo_Class from './Module7/Debugging/React Redux debugging/2. Thunk Middleware/components/Todo_Class';
+//Logger Middleware
+// import { Provider } from 'react-redux';
+// import store from './Module7/Debugging/React Redux debugging/1. Logger Middleware/redux-modules/Store';
+// import Todo_Function from './Module7/Debugging/React Redux debugging/1. Logger Middleware/components/Todo_Function';
+// import Todo_Class from './Module7/Debugging/React Redux debugging/1. Logger Middleware/components/Todo_Class';
+//suspend
+// import { Provider } from 'react-redux';
+// import Todo_Class from './Module7/Debugging/Reactjs debugging/suspend/components/Todo_Class';
+// import Todo_Function from './Module7/Debugging/Reactjs debugging/suspend/components/Todo_Function';
+// import store from './Module7/Debugging/React Redux debugging/1. Logger Middleware/redux-modules/Store';
+//7.
+// import store from './Module6/React Redux/2. React Redux/7. Redux Thunk/redux-modules/Store';
+// import Todo_Function from './Module6/React Redux/2. React Redux/7. Redux Thunk/components/Todo_Function';
+// import Todo_Class from './Module6/React Redux/2. React Redux/7. Redux Thunk/components/Todo_Class';
+//6.
+// import { Provider } from 'react-redux';
+// import store from './Module6/React Redux/2. React Redux/6. Middleware/redux-modules/Store';
+// import Todo_Function from './Module6/React Redux/2. React Redux/6. Middleware/components/Todo_Function';
+// import Todo_Class from './Module6/React Redux/2. React Redux/6. Middleware/components/Todo_Class';
+//5.
+// import { Provider } from 'react-redux';
+// import store from './Module6/React Redux/2. React Redux/5. Multiple reducers/redux-modules/Store';
+// import Todo_Function from './Module6/React Redux/2. React Redux/5. Multiple reducers/components/Todo_Function';
+// import Todo_Class from './Module6/React Redux/2. React Redux/5. Multiple reducers/components/Todo_Class';
+//4.
+// import { Provider } from 'react-redux';
+// import store from './Module6/React Redux/2. React Redux/4. using hooks/redux-modules/Store';
+// import Todo_Function from './Module6/React Redux/2. React Redux/4. using hooks/components/Todo_Function';
+// import Todo_Class from './Module6/React Redux/2. React Redux/4. using hooks/components/Todo_Class';
+//3.
+// import { Provider } from 'react-redux';
+// import store from './Module6/React Redux/2. React Redux/3. Refactored code/redux-modules/Store';
+// import Todo_Function from './Module6/React Redux/2. React Redux/3. Refactored code/components/Todo_Function';
+// import Todo_Class from './Module6/React Redux/2. React Redux/3. Refactored code/components/Todo_Class';
+// 2.
+// import { Provider } from 'react-redux';
+// import store from './Module6/React Redux/2. React Redux/2. Propagating changes/redux-modules/Store'
+// import Todo_Function from './Module6/React Redux/2. React Redux/2. Propagating changes/components/Todo_Function';
+// import Todo_Class from './Module6/React Redux/2. React Redux/2. Propagating changes/components/Todo_Class';
+// 1.
+// import { Provider } from "react-redux"
+// import store from './Module6/React Redux/2. React Redux/1. Basic Example/redux-modules/Store';
+// import Todo_Function from './Module6/React Redux/2. React Redux/1. Basic Example/components/Todo_Function';
+// import Todo_Class from './Module6/React Redux/2. React Redux/1. Basic Example/components/Todo_Class';
 
-function App() {
+function App(){
   // var id= 1, title= "Learn JSF", description= "Finish this article", priority= 5 ;
   // var todo={"id": 1, "title": "Learn JSF", "description": "Finish this article", "priority": 5}
   // const step = 5;
@@ -293,8 +345,8 @@ function App() {
       {/* <StyleModule_Function todo={todo} color="green"/> */}
       {/* <StyleModule_Class todo={todo} color="green"/> */}
 
-      {/* <Todo_Function todo={todo}/> */}
-      {/* <Todo_Class todo={todo}/> */}
+      {/* <ModulevsCssTodo_Function  todo={todo}/> */}
+      {/* <ModulevsCssTodo_Class todo={todo}/> */}
 
       {/* <PrimitiveList_Function todos={todos}/> */}
       {/* <PrimitiveList_Class todos={todos}/> */}
@@ -545,9 +597,76 @@ function App() {
        {/* <Todo3_Function/>
        <Todo3_Class/> */}
 
-       <Todo4_Function todo={todo}/>
-        <Todo4_Class todo={todo}/>
+       {/* <Todo4_Function todo={todo}/>
+        <Todo4_Class todo={todo}/> */}
 
+{/*React Redux */}
+        
+{/* <Provider store={store}>
+        <Todo_Function/>
+        <Todo_Class/>
+      </Provider> */}
+
+{/* <Provider store={store}>
+        <Todo_Function/>
+        <Todo_Class/>
+      </Provider> */}
+
+{/* <Provider store={store}>
+        <Todo_Function/>
+        <Todo_Class/>
+      </Provider> */}
+
+{/* <Provider store={store}>
+        <Todo_Function/>
+        <Todo_Class/>
+      </Provider> */}
+
+
+{/* <Provider store={store}>
+        <Todo_Function/>
+        <Todo_Class/>
+      </Provider> */}
+
+{/* <Provider store={store}>
+        <Todo_Function/>
+        <Todo_Class/>
+      </Provider> */}
+
+{/* <Provider store={store}>
+        <Todo_Function/>
+        <Todo_Class/>
+      </Provider> */}
+
+{/* Module 7 */}
+{/* Debugging */}
+      
+      {/* Suspend */}
+      {/* Reactjs Debugging */}
+
+      {/* <Todo_Class/>
+      <Todo_Class />
+      <Todo_Class />
+      <Todo_Class />
+      <Todo_Class />
+      <Todo_Class />
+      <React.Suspense fallback="Loading...">
+        <Todo_Function/>
+      </React.Suspense> */}
+
+
+      {/* React Redux Debugging */}
+
+      {/* <Provider store={store}>
+        <Todo_Function/>
+        <Todo_Class/>
+      </Provider> */}
+
+{/* <Provider store={store}>
+        <Todo_Function/>
+        <Todo_Class/>
+      </Provider> */}
+       
        
 
 

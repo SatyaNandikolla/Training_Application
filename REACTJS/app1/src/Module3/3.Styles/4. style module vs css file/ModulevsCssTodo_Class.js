@@ -3,7 +3,7 @@ import ChildComponent from './ChildComponent'
 import todoStyles from './todo.module.css'
 import './todo.css'
 
-export class Todo_Class extends Component {
+export class ModulevsCssTodo_Class extends Component {
 
     render() {
         
@@ -20,4 +20,4 @@ export class Todo_Class extends Component {
     }
 }
 
-export default Todo_Class
+export default ModulevsCssTodo_Class
