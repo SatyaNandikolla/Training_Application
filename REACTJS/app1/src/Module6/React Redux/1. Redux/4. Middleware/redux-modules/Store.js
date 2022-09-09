@@ -1,0 +1,9 @@
+import { createStore, applyMiddleware } from 'redux'
+import reduxLogger from 'redux-logger'
+import todoReducer from './todo/Reducer.js'
+
+const logger = reduxLogger.createLogger()
+
+const store = createStore(todoReducer, applyMiddleware(logger))
+
+export default store

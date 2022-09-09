@@ -5,7 +5,7 @@ export default class ObjectList_Class extends Component{
         var todos=this.props.todos
         return(
             <div>
-                <h2>Object List--Functional Component</h2>
+                <h2>Object List--Class Component</h2>
                 {
                     todos.map(todo=><ObjectList todo={todo}/>)
                 }
