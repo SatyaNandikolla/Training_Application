@@ -1,0 +1,11 @@
+curl http://localhost:5000/users
+-> GET HTTP method on user resource
+ 
+curl -X POST http://localhost:5000/users
+-> POST HTTP method on user resource
+ 
+curl -X PUT http://localhost:5000/users/123
+-> PUT HTTP method on user/123 resource
+ 
+curl -X DELETE http://localhost:5000/users/123
+-> DELETE HTTP method on user/123 resource
